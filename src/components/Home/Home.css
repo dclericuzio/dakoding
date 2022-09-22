@@ -1,0 +1,169 @@
+.home{
+    color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.home .home-left{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin-left: 14%;
+    padding: 16px;
+    flex: 1;
+}
+
+.home .home-left :nth-child(1){
+    font-size: 50px;
+    color: black;
+    font-weight: 400;
+}
+.home .home-left :nth-child(2){
+    font-size: 50px;
+    color: black;
+    font-weight: 400;
+}
+.home .home-left :nth-child(3){
+    font-size: 50px;
+    color: var(--satu-color);
+    font-weight: 600;
+}
+
+.home .button{
+    margin: 16px 0;
+    width: 300px;
+}
+
+.home .home-right{
+    /* flex: 1;
+    position: relative;
+    margin-right: 14%;
+    margin-top: 12%; */
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin-right: 14%;
+    padding: 16px;
+    flex: 1;
+}
+
+.home .home-right img{
+    height: 60%;
+    width: auto;
+}
+
+@media screen and (max-width:1351px){
+    .home .home-left{
+        margin-left:10%;
+    }
+}
+
+@media screen and (max-width:1261px){
+    .home .home-left{
+        margin-left:8%;
+    }
+}
+
+@media screen and (max-width:1191px){
+    .home .home-right img{
+        height: 55%;
+    }
+    .home .home-left{
+        margin-left:7%;
+    }
+}
+
+@media screen and (max-width:1111px){
+    .home .home-right img{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:1051px){
+    .home .home-right img{
+        height: 45%;
+    }
+}
+
+@media screen and (max-width:981px){
+    .home .home-right img{
+        height: 40%;
+    }
+    .home .home-left{
+        margin-left:6%;
+    }
+}
+
+@media screen and (max-width:981px){
+    .home .home-right img{
+        height: 35%;
+    }
+    .home .home-left{
+        margin-left:5%;
+    }
+}
+
+/* ipad air/pro */
+@media screen and (max-width:831px){
+    .home .home-right img{
+        height: 35%;
+    }
+    .home .home-left{
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:806px){
+    .home .home-right img{
+        height: 33%;
+    }
+    .home .home-left{
+        margin-left:2%;
+    }
+    .home .home-left :nth-child(1){
+        font-size: 40px;
+    }
+    .home .home-left :nth-child(2){
+        font-size: 40px;
+    }
+    .home .home-left :nth-child(3){
+        font-size: 40px;
+    }
+}
+
+/* ipad mini */
+@media screen and (max-width:768px){
+    .home .home-right img{
+        height: 30%;
+    }
+    .home .home-left{
+        margin-left:1%;
+    }
+    .home .home-left :nth-child(1){
+        font-size: 35px;
+    }
+    .home .home-left :nth-child(2){
+        font-size: 35px;
+    }
+    .home .home-left :nth-child(3){
+        font-size: 35px;
+    }
+}
+
+/* iphone pro */
+@media screen and (max-width:768px){
+    
+    .home .home-right{
+        display: none;
+    }
+}
+
+
