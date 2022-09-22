@@ -38,7 +38,27 @@ const Navbar = () => {
                 <li className='nav-item'>
                     <a href="/">Portfolio</a> 
                 </li>
+               {
+                click 
+                ? 
+                (<button href='/' className='buttontwo button-active'>Masuk</button>)
+                :
+               null
+                }
+               {
+                click 
+                ? 
+                (<button href='/' className='buttonthree button-active'>Daftar</button>)
+                :
+               null
+                }
+                
             </ul>
+            <div className="butt">
+                <button href='/' className='buttontwo nav-button-left'>Masuk</button>
+                <button href='/' className='buttonthree nav-button-right'>Daftar</button>
+            </div>
+           
         </nav>
     </div>
   )

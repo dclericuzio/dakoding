@@ -15,7 +15,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
+    /* max-width: 1240px; */
+    max-width: 1350px;
     margin: auto;
     height: 100%;
     padding: 0 16px;
@@ -48,6 +49,17 @@
     display: none;
 }
 
+.navbar .butt {
+    display: flex;
+    align-items: center;
+}
+.navbar .butt .nav-button-left, .navbar .butt .nav-button-right{
+    padding: 0;
+    width: 100px;
+    height: 35px;
+    margin-left: 5px;
+}
+
 @media screen and (max-width: 940px) {
     .header{
         max-width: 100%;
@@ -61,6 +73,15 @@
     .hamburger{
         display: block;
         cursor: pointer;
+    }
+    .navbar .butt{
+        display: none;
+    }
+
+    .nav-menu .button-active{
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     .nav-menu{
