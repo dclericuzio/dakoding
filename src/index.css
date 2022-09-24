@@ -5,6 +5,7 @@
   --tiga-color: #C2D7FB;
   --empat-color: #E6EFFF;
   --lima-color: #FFFFFF;
+  --enam-color: #767676;
 }
 
 *{
@@ -45,6 +46,16 @@ a{
   border: none;
   cursor: pointer;
 } */
+
+.bubble{
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: var(--empat-color);
+    width: fit-content;
+    font-size: 16px;
+    color: var(--satu-color);
+    font-weight: 600;
+}
 
 /* animasi button 1*/
 .button{

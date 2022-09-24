@@ -1,0 +1,135 @@
+.what{
+    color: black;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.what .what-left{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin-left: 11%;
+    padding: 16px;
+    flex: 1;
+}
+
+.what .what-right{
+    /* flex: 1;
+    position: relative;
+    margin-right: 14%;
+    margin-top: 12%; */
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1100px;
+    margin-right: 14%;
+    padding: 16px;
+    flex: 1;
+}
+
+.what .what-right p:nth-of-type(1){
+    color: var(--satu-color);
+    font-weight: 600;
+}
+.what .what-right p:nth-child(2){
+    padding: 30px 0px;
+    font-size: 50px;
+    color: black;
+    font-weight: 400;
+}
+.what .what-right span:nth-of-type(1){
+    font-size: 50px;
+    color: var(--satu-color);
+    font-weight: 600;
+}
+
+.what .what-left svg{
+    height: 500px !important;
+    width: fit-content;
+}
+
+@media screen and (max-width:1201px){
+    .what .what-left {
+        margin-left: 8%;
+    }
+    .what .what-left svg{
+        height: 450px !important;
+    }
+    .what .what-right {
+        margin-right: 9%;
+    }
+}
+@media screen and (max-width:1038px){
+    .what .what-left {
+        margin-left: 5%;
+    }
+    .what .what-left svg{
+        height: 400px !important;
+        margin-top: 70px;
+    }
+    .what .what-right {
+        margin-right: 9%;
+    }
+}
+@media screen and (max-width:916px){
+    .what .what-left {
+        margin-left: 1%;
+    }
+    .what .what-left svg{
+        height: 350px !important;
+        margin-top: 140px;
+    }
+    .what .what-right {
+        margin-right: 9%;
+    }
+}
+
+/* ipad air/pro */
+@media screen and (max-width:831px){
+    .what .what-left {
+        margin-left: 0%;
+    }
+    .what .what-left svg{
+        height: 326px !important;
+        margin-top: 145px;
+    }
+    .what .what-right {
+        margin-right: 4%;
+    }
+}
+
+/* ipad mini*/
+@media screen and (max-width:768px){
+    .what .what-left {
+        margin-left: 0%;
+    }
+    .what .what-left svg{
+        height: 326px !important;
+        margin-top: 145px;
+    }
+    .what .what-right {
+        margin-right: 4%;
+    }
+}
+
+/* iphone pro*/
+@media screen and (max-width:668px){
+    .what{
+        height: 50vh;
+    }
+    .what .what-left {
+        display: none;
+    }
+    
+    .what .what-right {
+        margin-right: 4%;
+    }
+}
+

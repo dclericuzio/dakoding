@@ -34,6 +34,10 @@
     font-weight: 600;
 }
 
+.home .home-left :nth-child(4){
+   padding-top: 30px;
+}
+
 .home .home-button{
     margin: 16px 0;
     width: 300px;
@@ -145,6 +149,7 @@
         height: 30%;
     }
     .home .home-left{
+        margin-top: 20px;
         margin-left:1%;
     }
     .home .home-left :nth-child(1){
@@ -159,8 +164,12 @@
 }
 
 /* iphone pro */
-@media screen and (max-width:768px){
+@media screen and (max-width:668px){
     
+    .home{
+        height: 80vh;
+        padding-top: 0px;
+    }
     .home .home-right{
         display: none;
     }
