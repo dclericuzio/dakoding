@@ -1,0 +1,79 @@
+.servicescard-container{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+}
+.servicescard{
+    border: solid 1px black;
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+
+}
+.servicescard img{
+    margin-top: 5%;
+    width: 60%;
+}
+.servicescard div{
+margin-top: 5%;
+margin-bottom: 5%;
+font-size: 20px;
+
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+}
+.servicescard .card-text{
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+.servicescard .button{
+    padding: 10px 30px;
+}
+@media screen and (max-width:1000px){
+    .servicescard .button{
+        padding: 5px 10px;
+    }
+    .servicescard-container{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+    }
+}
+@media screen and (max-width:700px){
+    .servicescard .button{
+        padding: 5px 10px;
+    }
+    .servicescard-container{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicescard{
+        border: solid 1px black;
+        width: 70%;
+        margin-left: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+    margin-bottom: 10%;
+    }
+    .servicescard div{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+        
+        }
+}
