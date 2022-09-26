@@ -11,7 +11,7 @@ const Why = () => {
         <p style={{color:'var(--enam-color)'}}>Dakoding adalah Digital Skill Camp kolaborasi mentor Dante Clericuzio dan Kevin Adrian yang telah lulus sarjana di XJTLU </p>
         </div>
         <div className="why-right">
-
+            
         </div>
     </div>
   )

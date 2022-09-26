@@ -1,7 +1,7 @@
 import React from 'react'
 import './What.css'
 import Lottie from 'react-lottie';
-import webleft from '../../images/webleft.json';
+import webleft from '../../../images/webleft.json';
 
 const What = () => {
 
@@ -33,12 +33,3 @@ const What = () => {
 }
 
 export default What
-
-
-
-{/* <img src={home1} alt="left pic"/>
-            <p>Mulai Karir</p>
-            <p>Teknologi Bersama</p>
-            <p>Dakoding</p>
-            <p style={{color:'var(--enam-color)'}}>Ikuti program bootcamp intensif untuk meningkatkan kemampuan hingga sukses berkarir di bidang teknologi</p>
-            <button href='/' className='button home-button'>Pelajari Bootcamp</button> */}

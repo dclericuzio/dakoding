@@ -1,7 +1,7 @@
 import './ServicesCard.css'
-import webcard from '../../images/webcard.gif'
-import mobile from '../../images/mobilecard.gif'
-import erp from '../../images/erpcard.gif'
+import webcard from '../../../images/webcard.gif'
+import mobile from '../../../images/mobilecard.gif'
+import erp from '../../../images/erpcard.gif'
 const ServicesCard=()=>{
     return(
         <div className='servicescard-container'>
