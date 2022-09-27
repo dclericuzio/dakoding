@@ -6,6 +6,7 @@ import { FaSpotify, FaCloud, FaMobile, FaPaw } from "react-icons/fa";
 const Tab = () => {
 
     const [click, setClick] = useState("spotify")
+    const [top, setTop] = useState("320px")
     // const handleClick = () => setClick(!click)
 
   return (
@@ -20,16 +21,32 @@ const Tab = () => {
             <div className="tabs">
                 <div className="tabs-header" >
 
-                    <div className={click=="spotify" ? "tabs-icon active" : "tabs-icon"} onClick={()=>setClick("spotify")}>
+                    <div 
+                        className={click=="spotify" ? "tabs-icon active" : "tabs-icon"} 
+                        onClick={()=>{
+                            setClick("spotify")  
+                            setTop("320px")}}>
                         <FaSpotify/> <p>Spotify</p>
                     </div>
-                    <div className={click=="cloud" ? "tabs-icon active" : "tabs-icon"} onClick={()=>setClick("cloud")}>
+                    <div 
+                        className={click=="cloud" ? "tabs-icon active" : "tabs-icon"} 
+                        onClick={()=>{
+                            setClick("cloud")
+                            setTop("430px")}}>
                         <FaCloud/> <p>Cloud</p>
                     </div>
-                    <div className={click=="mobile" ? "tabs-icon active" : "tabs-icon"} onClick={()=>setClick("mobile")}>
+                    <div 
+                        className={click=="mobile" ? "tabs-icon active" : "tabs-icon"} 
+                        onClick={()=>{
+                            setClick("mobile")
+                            setTop("540px")}}>
                         <FaMobile/> <p>Mobile</p>
                     </div>
-                    <div className={click=="paw" ? "tabs-icon active" : "tabs-icon"} onClick={()=>setClick("paw")}>
+                    <div 
+                        className={click=="paw" ? "tabs-icon active" : "tabs-icon"} 
+                        onClick={()=>{
+                            setClick("paw") 
+                            setTop("650px")}}>
                         <FaPaw/> <p>Paw</p>
                     </div>
 
@@ -37,11 +54,7 @@ const Tab = () => {
 
                 <div 
                     className="tabs-indicator" 
-                    style={ 
-                        click=="spotify" ? {top:'320px'} : {top:'320px'} || 
-                        click=="cloud" ? {top:'430px'} : {top:'320px'} || 
-                        click=="mobile" ? {top:"540px"} : {top:'320px'} || 
-                        click=="paw" ? {top:'650px'} : {top:'320px'}} >
+                    style={{top: top}} >
                 </div>
 
                 <div className="tabs-content"> 
