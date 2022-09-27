@@ -1,17 +1,20 @@
 .servicescard-container{
     margin: 0 auto;
+    margin-top: 100px;
     width: 70%;
     display: flex;
 }
 .servicescard{
-    border: solid 1px black;
+    border: solid 2px var(--tiga-color);
     width: 40%;
     margin-left: 2%;
     margin-right: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #C2D7FB); */
     border-radius: 25px;
+   
 
 }
 .servicescard img{

@@ -1,12 +1,41 @@
-.home{
-    color: black;
-    height: 100vh;
+.head{
+    /* color: black;
+    height: 650px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: var(--satu-color);
+    border-bottom-right-radius: 200px;
+    position: relative; */
+    background-color: #1e60bd;
+    border-bottom-right-radius: 200px;
+    padding-bottom: 50px;
+    position: relative;
+    display: block;
 }
 
-.home .home-left{
+.head .head-wrapper{
+    background: url('../../../images/homebg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-right-radius: 200px;
+    box-shadow: 0 6px 6px -1px rgb(0 0 0 / 40%), 0 2px 4px -1px rgb(0 0 0 / 20%);
+    height: 590px;
+    position: relative;
+    width: 100%;
+}
+.head .head-wrapper::before {
+    content: "";
+    background-image: linear-gradient(to right,#000,transparent);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-bottom-right-radius: 200px;
+}
+
+.head .head-left{
     position: relative;
     height: 100%;
     display: flex;
@@ -14,36 +43,43 @@
     justify-content: center;
     max-width: 1100px;
     margin-left: 14%;
+    margin-top: 50px;
     padding: 16px;
     flex: 1;
 }
 
-.home .home-left :nth-child(1){
+.head .head-left :nth-child(1){
     font-size: 50px;
-    color: black;
+    color: white;
     font-weight: 400;
 }
-.home .home-left :nth-child(2){
+.head .head-left :nth-child(2){
     font-size: 50px;
-    color: black;
+    color: white;
     font-weight: 400;
 }
-.home .home-left :nth-child(3){
+.head .head-left :nth-child(3){
     font-size: 50px;
     color: var(--satu-color);
     font-weight: 600;
 }
 
-.home .home-left :nth-child(4){
+.head .head-left :nth-child(4){
    padding-top: 30px;
 }
 
-.home .home-button{
+.head .head-button{
     margin: 16px 0;
     width: 300px;
+    background-color: white;
+}
+.head .head-button:hover{
+    margin: 16px 0;
+    width: 300px;
+    background-color: var(--satu-color);
 }
 
-.home .home-right{
+.head .head-right{
     /* flex: 1;
     position: relative;
     margin-right: 14%;
@@ -55,110 +91,111 @@
     justify-content: center;
     max-width: 1100px;
     margin-right: 14%;
+    margin-top: 40px;
     padding: 16px;
     flex: 1;
 }
 
-.home .home-right img{
+.head .head-right img{
     height: 60%;
     width: auto;
 }
 
 @media screen and (max-width:1351px){
-    .home .home-left{
+    .head .head-left{
         margin-left:10%;
     }
 }
 
 @media screen and (max-width:1261px){
-    .home .home-left{
+    .head .head-left{
         margin-left:8%;
     }
 }
 
 @media screen and (max-width:1191px){
-    .home .home-right img{
+    .head .head-right img{
         height: 55%;
     }
-    .home .home-left{
+    .head .head-left{
         margin-left:7%;
     }
 }
 
 @media screen and (max-width:1111px){
-    .home .home-right img{
+    .head .head-right img{
         height: 50%;
     }
 }
 
 @media screen and (max-width:1051px){
-    .home .home-right img{
+    .head .head-right img{
         height: 45%;
     }
 }
 
 @media screen and (max-width:981px){
-    .home .home-right img{
+    .head .head-right img{
         height: 40%;
     }
-    .home .home-left{
+    .head .head-left{
         margin-left:6%;
     }
 }
 
 @media screen and (max-width:981px){
-    .home .home-right img{
+    .head .head-right img{
         height: 35%;
     }
-    .home .home-left{
+    .head .head-left{
         margin-left:5%;
     }
 }
 
 /* ipad air/pro */
 @media screen and (max-width:831px){
-    .home .home-right img{
+    .head .head-right img{
         height: 35%;
     }
-    .home .home-left{
+    .head .head-left{
         margin-left:3%;
     }
 }
 
 @media screen and (max-width:806px){
-    .home .home-right img{
+    .head .head-right img{
         height: 33%;
     }
-    .home .home-left{
+    .head .head-left{
         margin-left:2%;
     }
-    .home .home-left :nth-child(1){
+    .head .head-left :nth-child(1){
         font-size: 40px;
     }
-    .home .home-left :nth-child(2){
+    .head .head-left :nth-child(2){
         font-size: 40px;
     }
-    .home .home-left :nth-child(3){
+    .head .head-left :nth-child(3){
         font-size: 40px;
     }
 }
 
 /* ipad mini */
 @media screen and (max-width:768px){
-    .home .home-right img{
+    .head .head-right img{
         height: 30%;
     }
-    .home .home-left{
+    .head .head-left{
         margin-top: 20px;
         margin-left:1%;
     }
-    .home .home-left :nth-child(1){
+    .head .head-left :nth-child(1){
         font-size: 35px;
     }
-    .home .home-left :nth-child(2){
+    .head .head-left :nth-child(2){
         font-size: 35px;
     }
-    .home .home-left :nth-child(3){
+    .head .head-left :nth-child(3){
         font-size: 35px;
     }
 }
@@ -166,11 +203,11 @@
 /* iphone pro */
 @media screen and (max-width:668px){
     
-    .home{
-        height: 80vh;
-        padding-top: 0px;
+    .head{
+        /* height: 80vh;
+        padding-top: 0px; */
     }
-    .home .home-right{
+    .head .head-right{
         display: none;
     }
 }
